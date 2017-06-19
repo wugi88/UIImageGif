@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QKe-A1-Txv">
+                                <rect key="frame" x="180" y="106" width="240" height="388"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="HU1-gl-OvV">
+                                        <rect key="frame" x="85" y="0.0" width="70" height="51"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="a4G-28-NKa">
+                                        <rect key="frame" x="111" y="61" width="19" height="19"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3.gif" translatesAutoresizingMaskIntoConstraints="NO" id="liO-VK-HKW">
+                                        <rect key="frame" x="96" y="90" width="48" height="48"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f4.gif" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-jt-4xQ">
+                                        <rect key="frame" x="95" y="148" width="51" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="n1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-fv-EsU">
+                                        <rect key="frame" x="0.0" y="208" width="240" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="ZuJ-0y-EpP"/>
+                                            <constraint firstAttribute="width" constant="240" id="ftB-Ms-CBR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="He1-TW-A8a"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="He1-TW-A8a"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QKe-A1-Txv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8t2-0V-sSA"/>
+                            <constraint firstItem="QKe-A1-Txv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pTW-Ya-tSh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="HU1-gl-OvV" id="j4K-rt-Laa"/>
+                        <outlet property="imageView2" destination="a4G-28-NKa" id="aDU-ZW-GIN"/>
+                        <outlet property="imageView3" destination="liO-VK-HKW" id="pPI-8L-Klc"/>
+                        <outlet property="imageView4" destination="5FU-jt-4xQ" id="c2m-Bt-H4r"/>
+                        <outlet property="imageView5" destination="ipd-fv-EsU" id="tEd-zk-hK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f1.gif" width="70" height="51"/>
+        <image name="f2.gif" width="19" height="19"/>
+        <image name="f3.gif" width="48" height="48"/>
+        <image name="f4.gif" width="51" height="50"/>
+        <image name="n1.gif" width="480" height="360"/>
+    </resources>
+</document>
